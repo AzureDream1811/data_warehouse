@@ -3,25 +3,25 @@ USE staging;
 
 create table temp
 (
-    FullDate     varchar(20),
-    Weekday      varchar(20),
-    Date         varchar(20),
-    Temperature  varchar(20),
-    UVValue      varchar(20),
-    Wind         varchar(20),
-    Humidity     varchar(20),
-    DewPoint     varchar(20),
-    Pressure     varchar(20),
-    Cloud        varchar(20),
-    Visibility   varchar(20),
-    CloudCeiling varchar(20)
+    FullDate      varchar(20),
+    Weekday       varchar(20),
+    Day           varchar(20),
+    Temperature   varchar(20),
+    UVValue       varchar(20),
+    WindDirection varchar(20),
+    Humidity      varchar(20),
+    DewPoint      varchar(20),
+    Pressure      varchar(20),
+    Cloud         varchar(20),
+    Visibility    varchar(20),
+    CloudCeiling  varchar(20)
 );
 
 CREATE TABLE official
 (
     FullDate      DATETIME,
     Weekday       VARCHAR(20),
-    Date          VARCHAR(20),
+    Day           VARCHAR(20),
     Temperature   DECIMAL(5, 2),
     UVValue       DECIMAL(4, 2),
     WindDirection VARCHAR(10),
