@@ -5,8 +5,8 @@ import java.util.Properties;
 
 public class DBConnection {
     public enum DatabaseType {
-        MYSQL("jdbc:mysql://localhost:3306/datawarehouse", "com.mysql.cj.jdbc.Driver"),
-        SQLSERVER("jdbc:sqlserver://localhost:1433;databaseName=datawarehouse", "com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        MYSQL("jdbc:mysql://localhost:3306/staging", "com.mysql.cj.jdbc.Driver"),
+        SQLSERVER("jdbc:sqlserver://localhost:1433;databaseName=staging", "com.microsoft.sqlserver.jdbc.SQLServerDriver");
 
         private final String url;
         private final String driverClass;
